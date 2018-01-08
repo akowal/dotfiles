@@ -1,0 +1,76 @@
+# This file contains fish universal variable definitions.
+# VERSION: 3.0
+SETUVAR --export AWS_PROFILE:lab\x2dandrei\x2ekoval
+SETUVAR --export FZF_DEFAULT_OPTS:\x2d\x2dansi\x1e\x2d\x2dtabstop\x3d4
+SETUVAR FZF_LEGACY_KEYBINDINGS:0
+SETUVAR FZF_PREVIEW_DIR_CMD:ls
+SETUVAR FZF_PREVIEW_FILE_CMD:head\x20\x2dn\x2010
+SETUVAR FZF_TMUX_HEIGHT:40\x25
+SETUVAR --export --path GOPATH:/Users/andkov/projects/go/
+SETUVAR --export GOROOT:/usr/local/opt/go/libexec
+SETUVAR --export --path NODE_PATH:/usr/local/bin/node
+SETUVAR __fish_init_2_39_8:\x1d
+SETUVAR __fish_init_2_3_0:\x1d
+SETUVAR __fish_init_3_x:\x1d
+SETUVAR __fish_initialized:3100
+SETUVAR _fish_abbr_ga:git\x20add
+SETUVAR _fish_abbr_gb:git\x20reset\x20HEAD\x7e1
+SETUVAR _fish_abbr_gc:git\x20commit
+SETUVAR _fish_abbr_gcb:git\x20checkout\x20\x2db
+SETUVAR _fish_abbr_gch:git\x20cherry\x2dpick
+SETUVAR _fish_abbr_gco:git\x20checkout
+SETUVAR _fish_abbr_gd:git\x20status\x20\x2ds\x20\x7c\x20string\x20sub\x20\x2ds4\x20\x7c\x20fzf\x20\x2d1\x20\x7c\x20xargs\x20git\x20diff
+SETUVAR _fish_abbr_gdb:git\x20branch\x20\x2d\x2dlist\x20\x2d\x2dformat\x3d\x27\x25\x28if\x3aequals\x3d\x5bgone\x5d\x29\x25\x28upstream\x3atrack\x29\x25\x28then\x29\x25\x28refname\x29\x25\x28end\x29\x27\x20\x7c\x20sed\x20\x27s\x2c\x5erefs/heads/\x2c\x2c\x3b/\x5e\x24/d\x27\x20\x7c\x20xargs\x20git\x20branch\x20\x2dd
+SETUVAR _fish_abbr_gf:git\x20fetch\x20\x2d\x2dprune
+SETUVAR _fish_abbr_gfa:git\x20fetch\x20\x2d\x2dall\x20\x2d\x2dprune
+SETUVAR _fish_abbr_gg:git\x20grep
+SETUVAR _fish_abbr_gl:git\x20log\x20\x2d\x2doneline
+SETUVAR _fish_abbr_gp:git\x20push
+SETUVAR _fish_abbr_gpf:git\x20push\x20\x2d\x2dforce
+SETUVAR _fish_abbr_gr:git\x20rebase
+SETUVAR _fish_abbr_gra:git\x20rebase\x20\x2d\x2dabort
+SETUVAR _fish_abbr_grc:git\x20rebase\x20\x2d\x2dcontinue
+SETUVAR _fish_abbr_gs:git\x20status\x20\x2d\x2dshort
+SETUVAR _fish_abbr_gst:git\x20stash
+SETUVAR _fish_abbr_gstp:git\x20stash\x20pop
+SETUVAR _fish_abbr_gwip:git\x20add\x20\x2e\x3b\x20and\x20git\x20commit\x20\x2dm\x20wip
+SETUVAR _fish_abbr_kns:kubens
+SETUVAR _fish_abbr_ktl:kubectl
+SETUVAR _fish_abbr_ktx:kubectx
+SETUVAR _fish_abbr_lg:lazygit
+SETUVAR _fish_abbr_rm:rmtrash
+SETUVAR _fish_abbr_rmf:rm\x20\x2drf
+SETUVAR --export base16_scheme:/Users/andkov/\x2econfig/base16/scripts/base16\x2dgoogle\x2ddark\x2esh
+SETUVAR fish_color_autosuggestion:586e75
+SETUVAR fish_color_cancel:\x2dr
+SETUVAR fish_color_command:93a1a1
+SETUVAR fish_color_comment:586e75
+SETUVAR fish_color_cwd:green
+SETUVAR fish_color_cwd_root:red
+SETUVAR fish_color_end:268bd2
+SETUVAR fish_color_error:dc322f
+SETUVAR fish_color_escape:00a6b2
+SETUVAR fish_color_history_current:\x2d\x2dbold
+SETUVAR fish_color_host:normal
+SETUVAR fish_color_host_remote:yellow
+SETUVAR fish_color_match:\x2d\x2dbackground\x3dbrblue
+SETUVAR fish_color_normal:normal
+SETUVAR fish_color_operator:00a6b2
+SETUVAR fish_color_param:839496
+SETUVAR fish_color_quote:657b83
+SETUVAR fish_color_redirection:6c71c4
+SETUVAR fish_color_search_match:bryellow\x1e\x2d\x2dbackground\x3dblack
+SETUVAR fish_color_selection:white\x1e\x2d\x2dbold\x1e\x2d\x2dbackground\x3dbrblack
+SETUVAR fish_color_status:red
+SETUVAR fish_color_user:brgreen
+SETUVAR fish_color_valid_path:\x2d\x2dunderline
+SETUVAR fish_greeting:Welcome\x20to\x20fish\x2c\x20the\x20friendly\x20interactive\x20shell
+SETUVAR fish_key_bindings:fish_default_key_bindings
+SETUVAR fish_pager_color_completion:B3A06D
+SETUVAR fish_pager_color_description:B3A06D
+SETUVAR fish_pager_color_prefix:cyan\x1e\x2d\x2dunderline
+SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
+SETUVAR fish_user_abbreviations:gs\x20git\x20status\x20\x2d\x2dshort\x1egl\x20git\x20log\x20\x2d\x2doneline\x1egp\x20git\x20push\x1egpf\x20git\x20push\x20\x2d\x2dforce\x1egc\x20git\x20commit\x1ega\x20git\x20add\x1egr\x20git\x20rebase\x1egd\x20git\x20\x2d\x2dno\x2dpager\x20diff\x20\x7c\x20v\x1egco\x20git\x20checkout\x1egcb\x20git\x20checkout\x20\x2db\x1egrc\x20git\x20rebase\x20\x2d\x2dcontinue\x1egra\x20git\x20rebase\x20\x2d\x2dabort\x1egch\x20git\x20cherry\x2dpick\x1egst\x20git\x20stash\x1egstp\x20git\x20stash\x20pop\x1egg\x20git\x20grep\x1ermf\x20rm\x20\x2drf\x1egf\x20git\x20fetch\x20upstream\x20\x2d\x2dprune\x1egfa\x20git\x20fetch\x20\x2d\x2dall\x20\x2d\x2dprune\x1egwip\x20git\x20add\x20\x2e\x3b\x20and\x20git\x20commit\x20\x2dm\x20wip
+SETUVAR fish_user_paths:/usr/local/opt/fzf/bin
+SETUVAR pure_version:2\x2e1\x2e8
+SETUVAR --export theme_color_scheme:dark2

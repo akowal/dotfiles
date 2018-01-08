@@ -1,0 +1,3 @@
+[submodule "homedir/config/base16"]
+	path = homedir/config/base16
+	url = https://github.com/chriskempson/base16-shell.git

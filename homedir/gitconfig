@@ -1,0 +1,35 @@
+[branch]
+    autosetuprebase = always
+[pull]
+    rebase = true
+[color]
+    ui = auto
+[log]
+    decorate = full
+[push]
+    default = simple
+[credential]
+    helper = osxkeychain
+[core]
+    editor = nvim
+    excludesfile = ~/.gitignore.global
+[user]
+	email = kowal.andrew@gmail.com
+	name = Andrei Koval
+
+[includeIf "gitdir:~/projects/sinch/**"]
+    path = ~/.gitconfig.sinch
+
+[tig]
+    main-view = date id author:width=16 commit-title:refs=1,graph=v2
+[diff]
+	algorithm = patience
+[alias]
+	prune-branches = !git remote prune origin && git branch -vv | grep ': gone]' | awk '{print $1}' | xargs git branch -d
+[merge]
+	renamelimit = 2000
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

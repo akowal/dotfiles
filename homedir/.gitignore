@@ -1,0 +1,6 @@
+config/fish/functions/fish_prompt.fish
+config/fish/fishd.*
+config/thefuck/__pycache__
+config/nvim
+ssh/id_*
+ssh/known_hosts
