@@ -2,6 +2,7 @@
 # VERSION: 3.0
 SETUVAR --export AWS_PROFILE:lab\x2dandrei\x2ekoval
 SETUVAR --export FZF_DEFAULT_OPTS:\x2d\x2dansi\x1e\x2d\x2dtabstop\x3d4
+SETUVAR FZF_DISABLE_KEYBINDINGS:0
 SETUVAR FZF_LEGACY_KEYBINDINGS:0
 SETUVAR FZF_PREVIEW_DIR_CMD:ls
 SETUVAR FZF_PREVIEW_FILE_CMD:head\x20\x2dn\x2010
@@ -38,6 +39,7 @@ SETUVAR _fish_abbr_kns:kubens
 SETUVAR _fish_abbr_ktl:kubectl
 SETUVAR _fish_abbr_ktx:kubectx
 SETUVAR _fish_abbr_lg:lazygit
+SETUVAR _fish_abbr_ports:lsof\x20\x2dnP\x20\x2bc\x2015\x20\x7c\x20grep\x20LISTEN
 SETUVAR _fish_abbr_rm:rmtrash
 SETUVAR _fish_abbr_rmf:rm\x20\x2drf
 SETUVAR --export base16_scheme:/Users/andkov/\x2econfig/base16/scripts/base16\x2dgoogle\x2ddark\x2esh
@@ -72,5 +74,40 @@ SETUVAR fish_pager_color_prefix:cyan\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SETUVAR fish_user_abbreviations:gs\x20git\x20status\x20\x2d\x2dshort\x1egl\x20git\x20log\x20\x2d\x2doneline\x1egp\x20git\x20push\x1egpf\x20git\x20push\x20\x2d\x2dforce\x1egc\x20git\x20commit\x1ega\x20git\x20add\x1egr\x20git\x20rebase\x1egd\x20git\x20\x2d\x2dno\x2dpager\x20diff\x20\x7c\x20v\x1egco\x20git\x20checkout\x1egcb\x20git\x20checkout\x20\x2db\x1egrc\x20git\x20rebase\x20\x2d\x2dcontinue\x1egra\x20git\x20rebase\x20\x2d\x2dabort\x1egch\x20git\x20cherry\x2dpick\x1egst\x20git\x20stash\x1egstp\x20git\x20stash\x20pop\x1egg\x20git\x20grep\x1ermf\x20rm\x20\x2drf\x1egf\x20git\x20fetch\x20upstream\x20\x2d\x2dprune\x1egfa\x20git\x20fetch\x20\x2d\x2dall\x20\x2d\x2dprune\x1egwip\x20git\x20add\x20\x2e\x3b\x20and\x20git\x20commit\x20\x2dm\x20wip
 SETUVAR fish_user_paths:/usr/local/opt/fzf/bin
+SETUVAR pure_begin_prompt_with_current_directory:true
+SETUVAR pure_color_command_duration:pure_color_warning
+SETUVAR pure_color_current_directory:pure_color_primary
+SETUVAR pure_color_danger:red
+SETUVAR pure_color_dark:black
+SETUVAR pure_color_git_branch:pure_color_mute
+SETUVAR pure_color_git_dirty:pure_color_mute
+SETUVAR pure_color_git_unpulled_commits:pure_color_info
+SETUVAR pure_color_git_unpushed_commits:pure_color_info
+SETUVAR pure_color_info:cyan
+SETUVAR pure_color_jobs:pure_color_normal
+SETUVAR pure_color_light:white
+SETUVAR pure_color_mute:brblack
+SETUVAR pure_color_normal:normal
+SETUVAR pure_color_primary:blue
+SETUVAR pure_color_prompt_on_error:pure_color_danger
+SETUVAR pure_color_prompt_on_success:pure_color_success
+SETUVAR pure_color_ssh_hostname:pure_color_mute
+SETUVAR pure_color_ssh_separator:pure_color_mute
+SETUVAR pure_color_ssh_user_normal:pure_color_mute
+SETUVAR pure_color_ssh_user_root:pure_color_light
+SETUVAR pure_color_success:magenta
+SETUVAR pure_color_virtualenv:pure_color_mute
+SETUVAR pure_color_warning:yellow
+SETUVAR pure_enable_git:true
+SETUVAR pure_reverse_prompt_symbol_in_vimode:true
+SETUVAR pure_separate_prompt_on_error:false
+SETUVAR pure_show_jobs:false
+SETUVAR pure_symbol_git_dirty:\x2a
+SETUVAR pure_symbol_git_unpulled_commits:\u21e3
+SETUVAR pure_symbol_git_unpushed_commits:\u21e1
+SETUVAR pure_symbol_prompt:\u276f
+SETUVAR pure_symbol_reverse_prompt:\u276e
+SETUVAR pure_symbol_title_bar_separator:\u2014
+SETUVAR pure_threshold_command_duration:5
 SETUVAR pure_version:2\x2e1\x2e8
 SETUVAR --export theme_color_scheme:dark2

@@ -58,6 +58,7 @@ abbr ktx kubectx
 abbr kns kubens
 abbr ktl kubectl
 abbr rm "rmtrash"
+abbr ports "lsof -nP +c 15 | grep LISTEN"
 
 set PATH $HOME/.cargo/bin  $PATH
 
