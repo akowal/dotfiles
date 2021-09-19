@@ -6,6 +6,7 @@ set -gx theme_powerline_fonts (if test -z "$NOFANCY"; echo 'yes'; else; echo 'no
 set -gx theme_nerd_fonts  (if test -z "$NOFANCY"; echo 'yes'; else; echo 'no'; end)
 set -gx theme_newline_cursor yes
 set -gx theme_display_k8s_context yes
+set -gx theme_display_k8s_namespace yes
 
 function colors
   set -l selected_scheme (ls -1 $HOME/.config/base16/scripts/base16-*.sh | fzf -1)
@@ -31,7 +32,6 @@ alias vim nvim
 alias ls exa
 alias mkdir "mkdir -pv"
 
-abbr lg "lazygit"
 abbr gf "git fetch --prune"
 abbr gfa "git fetch --all --prune"
 abbr gs "git status --short"
@@ -54,13 +54,16 @@ abbr gwip "git add .; and git commit -m wip"
 abbr gdb "git branch --list --format='%(if:equals=[gone])%(upstream:track)%(then)%(refname)%(end)' | sed 's,^refs/heads/,,;/^\$/d' | xargs git branch -d"
 abbr gb "git reset HEAD~1"
 
+
+
 abbr ktx kubectx
 abbr kns kubens
 abbr ktl kubectl
 abbr rm "rmtrash"
 abbr ports "lsof -nP +c 15 | grep LISTEN"
 
-set PATH $HOME/.cargo/bin  $PATH
+set PATH $HOME/.cargo/bin $PATH
+set PATH $HOME/bin $PATH
 
 function lst
     set -l level 2
@@ -75,6 +78,4 @@ function lst
 
     exa --tree --level $level $dir
 end
-
-thefuck --alias | source
 
