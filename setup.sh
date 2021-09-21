@@ -22,16 +22,17 @@ else
   success "XCode command line tools already installed"
 fi
 
-
 info "Installing Homebrew"
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+echo 'eval $(/opt/homebrew/bin/brew shellenv)' >> ~/.zprofile
+eval $(/opt/homebrew/bin/brew shellenv)
+info "Disabling Hombrew analytics"
 brew analytics off
 
 info "Installing Homebrew packages"
 brew bundle
 info "Cleaning up Homebrew files"
 brew cleanup
-brew cask cleanup
 
 info "Setting fish shell as default"
 if [[ ! $(echo $SHELL) == $(which fish) ]]; then
@@ -44,7 +45,7 @@ else
 fi
 
 source update-symlinks.sh
-#source macos.sh
+source macos.sh
 
 info "Installing Oh-My-Fish"
 curl -L https://get.oh-my.fish > install_omf
@@ -55,10 +56,7 @@ info "Building fish auto-completions from mans"
 fish -c 'fish_update_completions'
 
 info "Installing SpaceVim"
-curl -sLf https://spacevim.org/install.sh | bash -s -- --install neovim
-
-info "Setting up rustup"
-rustup-init
+curl -sLf https://spacevim.org/install.sh | bash
 
 success ">>> Battlecruiser operational <<<"
 fish
