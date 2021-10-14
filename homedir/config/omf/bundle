@@ -1,9 +1,9 @@
-package aws
 package brew
 package foreign-env
 package fzf
 package grc
 package https://github.com/evanlucas/fish-kubectl-completions
+package https://github.com/lgathy/google-cloud-sdk-fish-completion
 package z
 theme bobthefish
 theme default
