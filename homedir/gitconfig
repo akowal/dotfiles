@@ -17,8 +17,8 @@
 	email = kowal.andrew@gmail.com
 	name = Andrei Koval
 
-[includeIf "gitdir:~/projects/sinch/**"]
-    path = ~/.gitconfig.sinch
+[includeIf "gitdir:~/projects/pej/**"]
+    path = ~/.gitconfig.pej
 
 [tig]
     main-view = date id author:width=16 commit-title:refs=1,graph=v2
