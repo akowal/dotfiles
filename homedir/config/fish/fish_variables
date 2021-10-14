@@ -40,8 +40,6 @@ SETUVAR _fish_abbr_ktl:kubectl
 SETUVAR _fish_abbr_ktx:kubectx
 SETUVAR _fish_abbr_lg:lazygit
 SETUVAR _fish_abbr_ports:lsof\x20\x2dnP\x20\x2bc\x2015\x20\x7c\x20grep\x20LISTEN
-SETUVAR _fish_abbr_rm:rmtrash
-SETUVAR _fish_abbr_rmf:rm\x20\x2drf
 SETUVAR --export base16_scheme:/Users/andrew/\x2econfig/base16/scripts/base16\x2dgoogle\x2ddark\x2esh
 SETUVAR fish_color_autosuggestion:586e75
 SETUVAR fish_color_cancel:\x2dr
