@@ -45,7 +45,7 @@ else
 fi
 
 source update-symlinks.sh
-source macos.sh
+#source macos.sh
 
 info "Installing Oh-My-Fish"
 curl -L https://get.oh-my.fish > install_omf
