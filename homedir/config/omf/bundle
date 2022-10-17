@@ -4,6 +4,7 @@ package fzf
 package grc
 package https://github.com/evanlucas/fish-kubectl-completions
 package https://github.com/lgathy/google-cloud-sdk-fish-completion
+package sdk
 package z
 theme bobthefish
 theme default

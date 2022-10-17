@@ -17,6 +17,20 @@ hs.hotkey.bind(TRIGGER_RESIZE, "c", function()
   win:setFrame(f)
 end)
 
+hs.hotkey.bind(TRIGGER_RESIZE, "r", function()
+    local win = hs.window.focusedWindow()
+    local f = win:frame()
+    local screen = win:screen():frame()
+  
+    win:setFullscreen(false)
+  
+    f.x = screen.x + screen.w/4
+    f.y = screen.y
+    f.w = screen.w - screen.w/2
+    f.h = screen.h
+    win:setFrame(f)
+  end)
+  
 hs.hotkey.bind(TRIGGER_MOVE, "c", function()
   local win = hs.window.focusedWindow()
   local f = win:frame()

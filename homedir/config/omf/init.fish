@@ -51,9 +51,9 @@ abbr gst "git stash"
 abbr gstp "git stash pop"
 abbr gg "git grep"
 abbr gwip "git add .; and git commit -m wip"
-abbr gdb "git branch --list --format='%(if:equals=[gone])%(upstream:track)%(then)%(refname)%(end)' | sed 's,^refs/heads/,,;/^\$/d' | xargs git branch -d"
+#abbr gdb "git branch --list --format='%(if:equals=[gone])%(upstream:track)%(then)%(refname)%(end)' | sed 's,^refs/heads/,,;/^\$/d' | xargs git branch -d"
+abbr gdb "git branch -l --format='%(refname:short)' | fzf -1 | xargs git branch -D"
 abbr gb "git reset HEAD~1"
-
 
 
 abbr ktx kubectx
