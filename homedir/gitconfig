@@ -13,17 +13,18 @@
 [core]
     editor = nvim
     excludesfile = ~/.gitignore.global
+	autocrlf = input
 [user]
 	email = kowal.andrew@gmail.com
 	name = Andrei Koval
 
-[includeIf "gitdir:~/projects/pej/**"]
+[includeIf "gitdir:~/dev/pej/**"]
     path = ~/.gitconfig.pej
 
 [tig]
     main-view = date id author:width=16 commit-title:refs=1,graph=v2
-[diff]
-	algorithm = patience
+#[diff]
+#	algorithm = patience
 [alias]
 	prune-branches = !git remote prune origin && git branch -vv | grep ': gone]' | awk '{print $1}' | xargs git branch -d
 [merge]
@@ -35,3 +36,5 @@
 	required = true
 [init]
 	defaultBranch = main
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/

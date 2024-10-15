@@ -1,4 +1,5 @@
 package brew
+package direnv
 package foreign-env
 package fzf
 package grc

@@ -5,5 +5,18 @@ if status is-interactive
 end
 
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/andrew/google-cloud-sdk/path.fish.inc' ]; . '/Users/andrew/google-cloud-sdk/path.fish.inc'; end
+source "$(brew --prefix)/share/google-cloud-sdk/path.fish.inc"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+if test -f /opt/homebrew/Caskroom/miniconda/base/bin/conda
+    eval /opt/homebrew/Caskroom/miniconda/base/bin/conda "shell.fish" "hook" $argv | source
+else
+    if test -f "/opt/homebrew/Caskroom/miniconda/base/etc/fish/conf.d/conda.fish"
+        . "/opt/homebrew/Caskroom/miniconda/base/etc/fish/conf.d/conda.fish"
+    else
+        set -x PATH "/opt/homebrew/Caskroom/miniconda/base/bin" $PATH
+    end
+end
+# <<< conda initialize <<<
+

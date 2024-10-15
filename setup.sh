@@ -30,7 +30,7 @@ info "Disabling Hombrew analytics"
 brew analytics off
 
 info "Installing Homebrew packages"
-brew bundle
+brew bundle --verbose
 info "Cleaning up Homebrew files"
 brew cleanup
 

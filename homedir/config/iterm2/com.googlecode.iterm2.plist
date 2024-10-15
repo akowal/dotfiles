@@ -616,7 +616,7 @@
 			<key>Background Image Is Tiled</key>
 			<true/>
 			<key>Background Image Location</key>
-			<string>/Users/andrew/dotfiles/homedir/config/iterm2/background.jpg</string>
+			<string>/Users/akw/dotfiles/homedir/config/iterm2/background.jpg</string>
 			<key>Background Image Mode</key>
 			<integer>2</integer>
 			<key>Badge Color</key>
@@ -1039,7 +1039,7 @@
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>FantasqueSansMonoNerdFontCompleteM-Regular 16</string>
+			<string>FantasqueSansMNF-Regular 16</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<false/>
 			<key>Option Key Sends</key>
@@ -1199,7 +1199,7 @@
 	<key>VisualIndicatorForEsc</key>
 	<false/>
 	<key>WordCharacters</key>
-	<string>/-+\~_.</string>
+	<string>/-+\~_.%</string>
 	<key>findIgnoreCase_iTerm</key>
 	<true/>
 	<key>findMode_iTerm</key>
