@@ -135,6 +135,6 @@ function fwd-db
         return 1
     end
 
-    echo "Port forwarding to $POD"
+    echo "Port forwarding to $K8S_CONTEXT/$K8S_NAMESPACE/$POD"
     kubectl --context $K8S_CONTEXT -n $K8S_NAMESPACE port-forward $POD 5433:5432
 end

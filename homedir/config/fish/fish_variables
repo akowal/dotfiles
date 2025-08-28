@@ -16,7 +16,7 @@ SETUVAR --export USE_GKE_GCLOUD_AUTH_PLUGIN:True
 SETUVAR __fish_init_2_39_8:\x1d
 SETUVAR __fish_init_2_3_0:\x1d
 SETUVAR __fish_init_3_x:\x1d
-SETUVAR __fish_initialized:3400
+SETUVAR __fish_initialized:3800
 SETUVAR _fish_abbr_ga:git\x20add
 SETUVAR _fish_abbr_gb:git\x20reset\x20HEAD\x7e1
 SETUVAR _fish_abbr_gc:git\x20commit
@@ -62,7 +62,7 @@ SETUVAR fish_color_operator:00a6b2
 SETUVAR fish_color_param:839496
 SETUVAR fish_color_quote:657b83
 SETUVAR fish_color_redirection:6c71c4
-SETUVAR fish_color_search_match:bryellow\x1e\x2d\x2dbackground\x3dblack
+SETUVAR fish_color_search_match:white\x1e\x2d\x2dbackground\x3dblack
 SETUVAR fish_color_selection:white\x1e\x2d\x2dbold\x1e\x2d\x2dbackground\x3dbrblack
 SETUVAR fish_color_status:red
 SETUVAR fish_color_user:brgreen

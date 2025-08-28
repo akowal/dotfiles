@@ -42,3 +42,9 @@ auto-completion-tab-key-behavior = "cycle"
 name = 'shell'
 default_position = 'top'
 default_height = 30
+
+[custom-mapping]
+n = "j"  # down
+e = "k"  # up
+i = "l"  # right
+o = "h"  # left

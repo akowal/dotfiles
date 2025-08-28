@@ -4,3 +4,4 @@ config/thefuck/__pycache__
 config/nvim
 ssh/id_*
 ssh/known_hosts
+__pycache__
